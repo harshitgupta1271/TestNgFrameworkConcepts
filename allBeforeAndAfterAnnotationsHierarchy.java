@@ -66,3 +66,19 @@ public class allBeforeAndAfterAnnotationsHierarchy {
         System.out.println("8. @AfterSuite - Executed once after the entire test suite");
     }
 }
+
+/* output-----
+1. @BeforeSuite - Executed once before the entire test suite
+2. @BeforeTest - Executed before <test> tag in testng.xml
+3. @BeforeClass - Executed before the first method in this class
+4. @BeforeMethod - Executed before each @Test method
+🔸 Test Case 1 is executing
+5. @AfterMethod - Executed after each @Test method
+4. @BeforeMethod - Executed before each @Test method
+🔸 Test Case 2 is executing
+5. @AfterMethod - Executed after each @Test method
+6. @AfterClass - Executed after all methods in the class
+7. @AfterTest - Executed after <test> tag in testng.xml
+8. @AfterSuite - Executed once after the entire test suite
+
+ */
