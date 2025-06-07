@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.*;
 
-public class allBeforeAndAfterAnnotationsHierarchy {
+public class allBeforeAndAfterAnnotationsHierarchy {  
 
     @BeforeSuite
     public void beforeSuite() {
