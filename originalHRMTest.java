@@ -6,7 +6,7 @@ public class originalHRMTest {
   @Test
   public void f() {
 	  
-	  System.out.print("j");
+	  System.out.print("j");   
   }
   @Test
   public void j() {
