@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Declares this as an XML document and specifies UTF-8 encoding -->
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- Defines this XML as a TestNG suite configuration using the TestNG DTD (Document Type Definition) -->
+
+<suite name="Suite">
+  <!-- Defines the test suite with the name "Suite" -->
+
+  <test thread-count="5" name="Test">
+    <!-- Starts a test block inside the suite with name "Test" and allows 5 threads to run in parallel -->
+
+    <groups>
+      <!-- Group management starts here -->
+
+      <run>
+        <!-- Specifies which groups to include or exclude in this test run -->
+
+        <include name='functional'/>
+        <!-- Includes only the tests that belong to the 'functional' group -->
+
+        <!-- 
+        <include name='regression'/>  // Includes 'regression' group
+        <include name='functional'/>  // Includes 'functional' group again
+        <exclude name='regression'/>  // Excludes 'regression' group from execution
+        -->
+      </run>
+
+    </groups>
+
+    <classes>
+      <!-- Defines the list of test classes to be executed in this test -->
+
+      <class name="grouping.signUptest"/>
+      <!-- Includes the 'signUptest' class from the 'grouping' package -->
+
+      <class name="grouping.loginTes"/>
+      <!-- Includes the 'loginTes' class from the 'grouping' package -->
+
+      <class name="grouping.payments"/>
+      <!-- Includes the 'payments' class from the 'grouping' package -->
+
+    </classes>
+
+  </test> <!-- End of <test> block -->
+</suite> <!-- End of <suite> block -->
